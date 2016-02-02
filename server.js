@@ -1,5 +1,5 @@
 // set up
-var SERVER_PORT = 8089;
+var SERVER_PORT = process.env.PORT || 8080;
 var MONGO_USER = 'Hyperion';
 var MONGO_PASSWORD = 'darktemplar0';
 
@@ -151,5 +151,5 @@ app.get('*', function(req, res){
 
 
 // listen on server port; start server
-app.listen(process.env.port || SERVER_PORT);
-console.log("App listening on port "+ (process.env.port || SERVER_PORT));
+app.listen(SERVER_PORT);
+console.log("App listening on port "+ SERVER_PORT);
