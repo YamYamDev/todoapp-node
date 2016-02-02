@@ -151,5 +151,5 @@ app.get('*', function(req, res){
 
 
 // listen on server port; start server
-app.listen(SERVER_PORT);
+app.listen(process.env.port || SERVER_PORT);
 console.log("App listening on port "+ SERVER_PORT);
