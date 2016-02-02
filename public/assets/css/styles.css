@@ -1,0 +1,329 @@
+body{
+	padding:0px;
+	margin:0px;
+}
+
+.clear{
+	clear:both;
+}
+*{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.hidden{
+	display:none;
+}
+
+.container{
+
+	max-width: 980px;
+	margin:0 auto;
+	padding:0px 10px;
+}
+
+.entry{
+	cursor:hand;
+}
+
+.header{
+	background-color:#7AB271;
+	height: 50px;
+}
+
+.navbar{
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+	align-content:space-between;
+}
+
+
+.logo{
+	color: white;
+	font-weight: bold;
+	min-width: 130px;
+	flex:0;
+}
+
+.search-container{
+	flex:0;
+	height:36px;
+	min-width: 300px;
+	margin:5px;
+}
+
+.search-button{	
+	min-width: 40px;
+	width: 40px;
+	height: 36px;
+	background-color: #91FF7D;
+}
+
+.search-button img{
+	margin:5px 7px;
+}
+
+.search-form{
+	border:0;
+	background-color: #DBFFD5;
+	height: 36px;
+	padding:5px;
+	min-width:250px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+}
+.search-flex{
+	display: flex;
+}
+
+.menubar{
+	margin-top: 10px;
+	padding:0px 10px;
+	display:flex;
+	flex-wrap: wrap;
+	align-items:center;
+	justify-content: space-between;
+}
+
+.filter-button{
+	min-width:102px;
+	text-align: center;
+	line-height: 22px;
+	margin-right: 10px;
+	border-radius: 5px;
+	color:white;
+	font-family: 'Consolas';
+	font-size: 9pt;
+	cursor: hand;
+}
+
+
+.misc-filter{
+	display:flex;
+	flex-wrap: wrap;
+	align-items:center;
+	justify-content: space-between;
+}
+
+.datepicker{
+	padding:3px;
+	width:175px;
+}
+
+.filter-button:hover{
+	opacity: 1;
+}
+.all{
+	background-color: #B25F9A;
+}
+
+.immediate{
+	background-color: #7AB271;
+}
+
+.short-term{
+	background-color: #66A527;
+}
+
+.long-term{
+	background-color: #ADCC00;
+}
+
+.unselected{
+	opacity:0.3;
+}
+
+.filter-box{
+	display:flex;
+	flex-wrap: wrap;
+}
+.filter-label{
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+.operations div{
+	display:inline-block;
+	cursor: hand;
+}
+
+.operations div img{
+	margin: 10px;
+}
+
+.operations{
+	min-width: 100px;
+}
+
+
+.add{
+	width: 40px;
+	height: 36px;
+	background-color:#B25F9A;
+}
+
+.delete{
+	width: 40px;
+	height: 36px;
+	background-color:#B25F9A;
+}
+
+.todo-list{
+	margin-top: 10px;
+}
+
+.todo-list:first-child{
+	margin-top:30px;
+}
+
+.add-list{
+	margin-top:15px;
+}
+
+.entry{
+	height: 100px;
+	margin-bottom: 10px;
+	color:#313140;
+	display: flex;
+	max-width: 965px;
+}
+
+.entry-color-code{
+	min-width: 18px;
+	max-width: 18px;
+
+}
+.entry-progress{
+	min-width: 100px;
+	max-width: 100px;
+}
+.entry-content{
+	flex-grow:1;
+	padding:10px;
+}
+.immediate .entry-content{
+	background-color: #C5FFBB;
+}
+
+.short-term .entry-content{
+	background-color: #C3E89F;
+}
+
+.long-term .entry-content{
+	background-color: #F2FFAE;
+}
+
+.entry input[type="text"]:disabled{
+	background-color: inherit;
+	border:0;
+}
+
+.entry-progress-track{
+	width:100px;
+	font-size: 	22pt;
+	font-weight: bold;
+}
+.entry-title{
+	font-size: 13pt;
+	font-weight: bold;
+	width: 100%;
+}
+
+.entry-message{
+	width:100%;
+}
+
+.entry-title:disabled, .entry-message:disabled, .entry-date_finished:disabled{
+	color:#111;
+}
+.entry-content h3{
+	padding: 0px;
+	margin: 0px;
+}
+.entry-content p{
+	font-size: 9pt;
+	margin:0px;
+}
+
+.italics{
+	font-style: italic;
+}
+.entry-progress *{
+	margin: 0px;
+	color:white;
+	padding: 0px;
+	text-align: center;
+}
+
+
+.entry-progress-track{
+	color:black;
+}
+
+.entry-progress-track:disabled{
+	color:white;
+}
+.entry-progress p{
+	color:white;
+	text-align: center;
+	margin-top:10px;
+	margin-bottom: -2px;
+	font-size: 10pt;
+}
+.entry-progress .buttons{
+	margin-top:4px;
+}
+
+.entry-progress .buttons img{
+	margin-right: 3px;
+}
+
+.entry-add{
+	display: flex;
+	flex-wrap:wrap;
+}
+.entry-add *{
+	height: 36px
+}
+
+.entry-add .forms{
+	background-color: #DBFFD5;
+	border:0;
+}
+.entry-add .title{
+	min-width: 607px;
+	margin-right: 10px;
+	padding: 5px;
+	font-style: italic;
+	
+}
+
+.entry-add .urgency{
+	min-width: 210px;
+	padding: 5px;
+	font-style: italic;
+}
+
+.entry-add .description{
+	width: 100%;
+	padding: 5px;
+	font-style: italic;
+}
+
+.entry-add-buttons{
+	line-height: 100px;
+	text-align: center;
+}
+
+.entry-add-buttons img{
+	margin-right: 3px;
+	cursor: hand;
+}
+
+.entry-complete, .entry-update{
+	cursor: hand;
+}
+
+.entry-selected{
+	background-color:#B25F9A;
+}

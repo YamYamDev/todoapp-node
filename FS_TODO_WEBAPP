@@ -1,0 +1,18 @@
+todo list webapp
+
+features:
+- has three subsections: immediate goals, short term goals, long term goals
+--- immediate goals: title only, needs to be done immediately
+--- short term goals: title with deadline with progress and comments
+--- long term goals: title with deadline with comments
+- has [all], which lists all goals
+- has [archive], which lists all goals completed // omitted. unnecessary
+- there is a checkbox to filter only uncompleted goals for every subsections
+- there is a checkbox and date textbox to filter 
+
+technical requirements:
+- uses node js
+- web
+- deploy in heroku
+- mongodb
+- optional: angular

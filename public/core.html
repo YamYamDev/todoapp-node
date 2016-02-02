@@ -1,0 +1,166 @@
+<html ng-app="objTodo">
+	<head>
+		<link href='assets/css/styles.css' rel='stylesheet' type='text/css' />
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+		<!-- SPELLS -->
+	    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!-- load jquery -->
+	    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script><!-- load angular 
+	    -->
+	    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	    <script src="core.js"></script>
+	</head>
+
+	<body ng-controller="mainController">
+		<div class="header">
+
+			<div class="container navbar">
+				<div class="logo">
+					goals webapp
+				</div>
+
+				<div class="search-container">
+					<div class="search-flex">
+					
+						<input type="text" class="search-form" placeholder="Search..." id="search" ng-model="filters.search">
+						
+						<div class="search-button nobr">
+							<img src="assets/imgs/search.png" />
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+		<div class="container menubar">
+			<div class="filter-box">
+				<span class="filter-label">
+					Filters:
+				</span>
+				<div class="filter-button all selected" ng-click="changeTypeFilter('');">All</div>
+				<div class="filter-button immediate unselected" ng-click="changeTypeFilter('immediate');">Immediate</div>
+				<div class="filter-button short-term unselected" ng-click="changeTypeFilter('short-term');">Short-term</div>
+				<div class="filter-button long-term unselected" ng-click="changeTypeFilter('long-term');">Long-term</div>
+			</div>
+
+			<div class="operations">
+				<div class="add" >
+					<img src="assets/imgs/add.png" />
+				</div>
+				<div class="delete" ng-click="deleteTodo()">	
+					<img src="assets/imgs/trash.png" />				
+				</div>
+			</div>
+
+           
+		</div>
+
+		<div class="container misc-filter">
+			<div class="checkboxFilter">
+                <input type="checkbox" value="Filter only uncompleted tasks" ng-click="setCompleteChecked()"> <small>Filter only completed tasks</small>
+            </div>
+
+            <div class="dateFilter">
+            	<p><input type="date"  ng-model="filters.date_from" placeholder="Date Filter From" /> - <input type="date" ng-model="filters.date_to" placeholder="Date Filter To" /></p>
+            </div>
+		</div>
+
+		<div class="container add-list hidden">
+
+			<div class="entry immediate">
+				<div class="entry-color-code"></div>
+				<div class="entry-content entry-add">
+					<input type="text" placeholder="title" class="title forms" ng-model="formData.title"/>
+					<select class="urgency forms" ng-model="formData.todo_type">
+						<option value="immediate">Immediate</option>
+						<option value="short-term">Short-term</option>
+						<option value="long-term">Long-term</option>
+					</select>
+					<input type="text" placeholder="description" class="description forms" ng-model="formData.message"/>
+				</div>
+				<div class="entry-progress entry-add-buttons">
+					<img src="assets/imgs/complete.png" class="add-complete" ng-click="createTodo()"/>
+					<img src="assets/imgs/cancel.png" class="add-cancel"/>
+				</div>
+			</div>
+		</div>
+
+		<div class="container todo-list" ng-repeat="todo in todos | dateFilterer:filters.date_from:filters.date_to | typeFilterer:typeFilter | searchFilterer:filters.search | checkFilterer:completeChecked ">
+			
+			<div class="entry" ng-class="todo.todo_type">
+				<div class="entry-color-code" data="{{todo._id}}"></div>
+				<div class="entry-content">
+					<input type="text" value="{{ todo.title }}" class="entry-title"  disabled>
+					<p>Date created: <span class="italics">{{ todo.date_started | dateFilter }}</span> </p>
+					<p><input type="text" value="{{ todo.message }}" class="entry-message italics" disabled></p>
+					<p>Date finished: <input type="text" value="{{ todo.date_finished | dateFilter }}" class="entry-date_finished italics" disabled /></p>
+				</div>
+				<div class="entry-progress">
+					<p>Progress:</p>
+					<h1><input type="text" value="{{ todo.progress + '%'}}" class="entry-progress-track"  disabled></h1>
+					<div class="buttons">
+						<img src="assets/imgs/complete.png" class="entry-complete" ng-click="updateTodo($event, todo._id)" />
+						<img src="assets/imgs/update.png" class="entry-update"/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+<script>
+    
+    $(function(){
+    	$(".datepicker").datepicker();
+    });
+
+    $(document).on("click", ".unselected", function(){
+        $(".selected").addClass("unselected");
+        $(".selected").removeClass("selected");
+        $(this).addClass("selected");
+        $(this).removeClass("unselected");
+    });
+	$(document).on("click",".add",function(){
+		$(".add-list").removeClass("hidden");
+	});
+
+	$(document).on("click",".entry",function(event){
+		var selectBar = $(this).find(".entry-color-code");
+		if(selectBar.hasClass("entry-selected")){
+			selectBar.removeClass("entry-selected");
+		}
+		else{
+			selectBar.addClass("entry-selected");
+		}
+	});
+    
+    $(document).on("click", ".entry input", function(event){
+        event.stopPropagation();
+    });
+    
+    $(document).on("click", ".entry img", function(event){
+        event.stopPropagation();
+    });
+
+	$(document).on("click",".add-cancel",function(){
+		$(".add-list").addClass("hidden");
+	});
+
+	$(document).on("click", ".entry-update", function(){
+		var entryDOM = $(this).parent().parent().parent();
+		entryDOM.find(".entry-title").prop("disabled",false);
+		entryDOM.find(".entry-message").prop("disabled",false);
+		entryDOM.find(".entry-progress-track").prop("disabled",false);
+	});
+
+	$(document).on("click", ".entry-complete", function(){
+		var entryDOM = $(this).parent().parent().parent();
+		entryDOM.find(".entry-title").prop("disabled",true);
+		entryDOM.find(".entry-message").prop("disabled",true);
+		entryDOM.find(".entry-progress-track").prop("disabled",true);
+	});
+
+
+</script>
