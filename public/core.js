@@ -162,6 +162,7 @@ function mainController($scope, $http){
 		$http.put('/api/todos/update/' + id, formData )
 			.success(function(data){
 				console.log(data);
+				$scope.todos = data;
 			})
 			.error(function(data){
 				console.log('Error: '+data);

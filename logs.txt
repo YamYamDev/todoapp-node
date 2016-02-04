@@ -1,0 +1,101 @@
+2016-02-02T19:25:19.996070+00:00 app[web.1]: mongodb://Hyperion:darktemplar0@ds037195.mongolab.com:37195/kalayaan
+2016-02-02T19:25:21.062438+00:00 app[web.1]: mongo connected
+2016-02-02T19:26:18.011324+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2016-02-02T19:26:18.011324+00:00 heroku[web.1]: Stopping process with SIGKILL
+2016-02-02T19:26:18.703645+00:00 heroku[web.1]: Process exited with status 137
+2016-02-02T19:29:46.822363+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=todoapp-node.herokuapp.com request_id=42cafc61-ddc4-4248-8484-352e798c5cb7 fwd="112.198.246.46" dyno= connect= service= status=503 bytes=
+2016-02-02T19:29:47.540267+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=todoapp-node.herokuapp.com request_id=dd9cb930-a8e9-432e-b98d-d49430f3a537 fwd="112.198.246.46" dyno= connect= service= status=503 bytes=
+2016-02-02T19:29:48.855276+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=todoapp-node.herokuapp.com request_id=d45a34f8-0504-4d07-9db5-ca4a91262728 fwd="112.198.246.46" dyno= connect= service= status=503 bytes=
+2016-02-02T19:29:49.722619+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=todoapp-node.herokuapp.com request_id=db6832f6-76b2-4843-ba0c-9a69808d8b3f fwd="184.95.52.198" dyno= connect= service= status=503 bytes=
+2016-02-02T19:30:47.430001+00:00 heroku[web.1]: State changed from crashed to down
+2016-02-02T19:30:47.270738+00:00 heroku[api]: Scale to web=0 by rwg.amos.dev@gmail.com
+2016-02-02T19:30:54.684795+00:00 heroku[api]: Scale to web=1 by rwg.amos.dev@gmail.com
+2016-02-02T19:30:55.984835+00:00 heroku[web.1]: Starting process with command `npm start`
+2016-02-02T19:30:58.209957+00:00 app[web.1]: 
+2016-02-02T19:30:58.209979+00:00 app[web.1]: > node server.js
+2016-02-02T19:30:58.209977+00:00 app[web.1]: > node-todo-web@0.0.0 start /app
+2016-02-02T19:30:58.209980+00:00 app[web.1]: 
+2016-02-02T19:30:58.664079+00:00 app[web.1]: mongodb://Hyperion:darktemplar0@ds037195.mongolab.com:37195/kalayaan
+2016-02-02T19:30:58.660773+00:00 app[web.1]: mongodb://Hyperion:darktemplar0@ds037195.mongolab.com:37195/kalayaan
+2016-02-02T19:30:58.720369+00:00 app[web.1]: App listening on port 8089
+2016-02-02T19:30:59.356701+00:00 app[web.1]: mongo connected
+2016-02-02T19:31:56.322284+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2016-02-02T19:31:56.322284+00:00 heroku[web.1]: Stopping process with SIGKILL
+2016-02-02T19:31:57.030129+00:00 heroku[web.1]: Process exited with status 137
+2016-02-02T19:31:57.027990+00:00 heroku[web.1]: State changed from starting to crashed
+2016-02-02T19:31:57.029007+00:00 heroku[web.1]: State changed from crashed to starting
+2016-02-02T19:31:58.769324+00:00 heroku[web.1]: Starting process with command `npm start`
+2016-02-02T19:32:01.609641+00:00 app[web.1]: 
+2016-02-02T19:32:01.609661+00:00 app[web.1]: 
+2016-02-02T19:32:01.609659+00:00 app[web.1]: > node-todo-web@0.0.0 start /app
+2016-02-02T19:32:01.609661+00:00 app[web.1]: > node server.js
+2016-02-02T19:32:02.397254+00:00 app[web.1]: App listening on port 8089
+2016-02-02T19:32:02.330478+00:00 app[web.1]: mongodb://Hyperion:darktemplar0@ds037195.mongolab.com:37195/kalayaan
+2016-02-02T19:32:02.326820+00:00 app[web.1]: mongodb://Hyperion:darktemplar0@ds037195.mongolab.com:37195/kalayaan
+2016-02-02T19:32:03.720869+00:00 app[web.1]: mongo connected
+2016-02-02T19:32:17.445163+00:00 heroku[router]: at=error code=H20 desc="App boot timeout" method=GET path="/" host=todoapp-node.herokuapp.com request_id=de2c296a-b794-4c6e-a95b-e810b066f575 fwd="112.198.246.46" dyno= connect= service= status=503 bytes=
+2016-02-02T19:32:59.108259+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2016-02-02T19:32:59.108596+00:00 heroku[web.1]: Stopping process with SIGKILL
+2016-02-02T19:33:00.231792+00:00 heroku[web.1]: State changed from starting to crashed
+2016-02-02T19:33:00.212950+00:00 heroku[web.1]: Process exited with status 137
+2016-02-02T19:33:02.690392+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=todoapp-node.herokuapp.com request_id=e6ca3aec-018e-4bd8-8a5e-ce8407b34eae fwd="112.198.246.46" dyno= connect= service= status=503 bytes=
+2016-02-02T19:33:02.772144+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=todoapp-node.herokuapp.com request_id=6f358d80-3086-49ab-a42f-6c25f874e0e6 fwd="112.198.246.46" dyno= connect= service= status=503 bytes=
+2016-02-02T19:33:03.765915+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=todoapp-node.herokuapp.com request_id=95e501cc-3487-4011-bb54-b49031067ee5 fwd="112.198.246.46" dyno= connect= service= status=503 bytes=
+2016-02-02T19:40:01.702566+00:00 heroku[slug-compiler]: Slug compilation started
+2016-02-02T19:40:01.702571+00:00 heroku[slug-compiler]: Slug compilation finished
+2016-02-02T19:40:01.517820+00:00 heroku[api]: Deploy a5a6302 by rwg.amos.dev@gmail.com
+2016-02-02T19:40:01.517820+00:00 heroku[api]: Release v4 created by rwg.amos.dev@gmail.com
+2016-02-02T19:40:01.854767+00:00 heroku[web.1]: State changed from crashed to starting
+2016-02-02T19:40:02.871151+00:00 heroku[web.1]: Starting process with command `npm start`
+2016-02-02T19:40:04.618496+00:00 app[web.1]: 
+2016-02-02T19:40:04.618503+00:00 app[web.1]: > node-todo-web@0.0.0 start /app
+2016-02-02T19:40:04.618504+00:00 app[web.1]: > node server.js
+2016-02-02T19:40:04.618504+00:00 app[web.1]: 
+2016-02-02T19:40:05.053666+00:00 app[web.1]: mongodb://Hyperion:darktemplar0@ds037195.mongolab.com:37195/kalayaan
+2016-02-02T19:40:05.097597+00:00 app[web.1]: App listening on port 8089
+2016-02-02T19:40:05.055685+00:00 app[web.1]: mongodb://Hyperion:darktemplar0@ds037195.mongolab.com:37195/kalayaan
+2016-02-02T19:40:05.605275+00:00 app[web.1]: mongo connected
+2016-02-02T19:41:03.304315+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2016-02-02T19:41:03.304315+00:00 heroku[web.1]: Stopping process with SIGKILL
+2016-02-02T19:41:03.908452+00:00 heroku[web.1]: State changed from starting to crashed
+2016-02-02T19:41:03.888297+00:00 heroku[web.1]: Process exited with status 137
+2016-02-02T19:41:05.426169+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=todoapp-node.herokuapp.com request_id=6f8aaa86-2e52-446e-bc06-f193c9107535 fwd="112.198.246.46" dyno= connect= service= status=503 bytes=
+2016-02-02T19:41:05.927678+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=todoapp-node.herokuapp.com request_id=7366e5aa-a768-47ea-b641-2f928167c476 fwd="112.198.246.46" dyno= connect= service= status=503 bytes=
+2016-02-02T19:43:13.178026+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=todoapp-node.herokuapp.com request_id=22b433ef-7eb1-42bf-936b-a4c74f339b4c fwd="112.198.246.46" dyno= connect= service= status=503 bytes=
+2016-02-02T19:43:15.428440+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=todoapp-node.herokuapp.com request_id=6aaf5985-0367-48a7-ad02-cf87d0e237b4 fwd="112.198.246.46" dyno= connect= service= status=503 bytes=
+2016-02-02T19:44:51.715227+00:00 heroku[web.1]: State changed from crashed to starting
+2016-02-02T19:44:53.346178+00:00 heroku[web.1]: Starting process with command `npm start`
+2016-02-02T19:44:55.734313+00:00 app[web.1]: 
+2016-02-02T19:44:55.734321+00:00 app[web.1]: > node-todo-web@0.0.0 start /app
+2016-02-02T19:44:55.734323+00:00 app[web.1]: > node server.js
+2016-02-02T19:44:55.734323+00:00 app[web.1]: 
+2016-02-02T19:44:56.352854+00:00 app[web.1]: mongodb://Hyperion:darktemplar0@ds037195.mongolab.com:37195/kalayaan
+2016-02-02T19:44:56.424166+00:00 app[web.1]: App listening on port 8089
+2016-02-02T19:44:56.355146+00:00 app[web.1]: mongodb://Hyperion:darktemplar0@ds037195.mongolab.com:37195/kalayaan
+2016-02-02T19:44:57.300764+00:00 app[web.1]: mongo connected
+2016-02-02T19:45:53.606539+00:00 app[web.1]: Error waiting for process to terminate: No child processes
+2016-02-02T19:45:53.582635+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2016-02-02T19:45:53.582635+00:00 heroku[web.1]: Stopping process with SIGKILL
+2016-02-02T19:45:54.441401+00:00 heroku[web.1]: State changed from starting to crashed
+2016-02-02T19:45:54.426964+00:00 heroku[web.1]: Process exited with status 22
+2016-02-02T19:45:55.792213+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=todoapp-node.herokuapp.com request_id=a3a15e30-8278-4269-8e39-32aae3ae0800 fwd="112.198.246.46" dyno= connect= service= status=503 bytes=
+2016-02-02T19:46:30.960212+00:00 heroku[api]: Release v5 created by rwg.amos.dev@gmail.com
+2016-02-02T19:46:30.960212+00:00 heroku[api]: Deploy e392622 by rwg.amos.dev@gmail.com
+2016-02-02T19:46:31.119077+00:00 heroku[slug-compiler]: Slug compilation started
+2016-02-02T19:46:31.119082+00:00 heroku[slug-compiler]: Slug compilation finished
+2016-02-02T19:46:31.065440+00:00 heroku[web.1]: State changed from crashed to starting
+2016-02-02T19:46:32.484310+00:00 heroku[web.1]: Starting process with command `npm start`
+2016-02-02T19:46:35.210461+00:00 app[web.1]: > node-todo-web@0.0.0 start /app
+2016-02-02T19:46:35.210452+00:00 app[web.1]: 
+2016-02-02T19:46:35.210463+00:00 app[web.1]: 
+2016-02-02T19:46:35.210462+00:00 app[web.1]: > node server.js
+2016-02-02T19:46:35.728560+00:00 app[web.1]: mongodb://Hyperion:darktemplar0@ds037195.mongolab.com:37195/kalayaan
+2016-02-02T19:46:35.778829+00:00 app[web.1]: App listening on port 8089
+2016-02-02T19:46:35.730792+00:00 app[web.1]: mongodb://Hyperion:darktemplar0@ds037195.mongolab.com:37195/kalayaan
+2016-02-02T19:46:36.545743+00:00 app[web.1]: mongo connected
+2016-02-02T19:47:32.929270+00:00 heroku[web.1]: Stopping process with SIGKILL
+2016-02-02T19:47:32.929270+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2016-02-02T19:47:33.885298+00:00 heroku[web.1]: State changed from starting to crashed
+2016-02-02T19:47:33.870988+00:00 heroku[web.1]: Process exited with status 137
+2016-02-02T19:47:35.513407+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=todoapp-node.herokuapp.com request_id=84ceb993-084e-4a72-be40-71d743dd4c37 fwd="112.198.246.46" dyno= connect= service= status=503 bytes=
+2016-02-02T19:47:38.164228+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=todoapp-node.herokuapp.com request_id=ceb6b9cd-d4a0-41ea-84c0-7b1c2653af2f fwd="112.198.246.46" dyno= connect= service= status=503 bytes=
