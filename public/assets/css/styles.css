@@ -327,3 +327,18 @@ body{
 .entry-selected{
 	background-color:#B25F9A;
 }
+
+.counter{
+	border:solid 1px #CCC;
+	border-left: solid 1px white;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0px 5px;
+	background-color:white;
+	color:black;
+	float:right;
+
+}
+

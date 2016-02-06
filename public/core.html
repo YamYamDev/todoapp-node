@@ -47,10 +47,13 @@
 				<span class="filter-label">
 					Filters:
 				</span>
-				<div class="filter-button all selected" ng-click="changeTypeFilter('');">All</div>
-				<div class="filter-button immediate unselected" ng-click="changeTypeFilter('immediate');">Immediate</div>
-				<div class="filter-button short-term unselected" ng-click="changeTypeFilter('short-term');">Short-term</div>
-				<div class="filter-button long-term unselected" ng-click="changeTypeFilter('long-term');">Long-term</div>
+				<div class="filter-button all selected" ng-click="changeTypeFilter('');">
+					All 
+					<div class="counter">{{ all_count }}</div>
+				</div>
+				<div class="filter-button immediate unselected" ng-click="changeTypeFilter('immediate');">Immediate<div class="counter">{{ immediate_count }}</div></div>
+				<div class="filter-button short-term unselected" ng-click="changeTypeFilter('short-term');">Short-term<div class="counter">{{ short_term_count }}</div></div>
+				<div class="filter-button long-term unselected" ng-click="changeTypeFilter('long-term');">Long-term<div class="counter">{{ long_term_count}}</div></div>
 			</div>
 
 			<div class="operations">

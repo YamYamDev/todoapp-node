@@ -198,6 +198,7 @@ function mainController($scope, $http){
 						console.log('Error: '+ data);
 					});
 		}
+		$scope.recount();
 		
 	};
 
